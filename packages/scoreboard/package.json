@@ -1,0 +1,30 @@
+{
+  "name": "scoreboard",
+  "version": "0.1.0",
+  "main": "dist/scoreboard.umd.js",
+  "module": "dist/scoreboard.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npx vite build",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "sport",
+    "scoreboard",
+    "library",
+    "typescript",
+    "vite"
+  ],
+  "author": "Maksim Kirylka",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "vite": "^6.0.11",
+    "vite-plugin-dts": "^4.5.0",
+    "vitest": "^3.0.3"
+  }
+}
