@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { greet } from 'scoreboard';
+import { greet } from '@lib/scoreboard';
 
 export const ScoreboardExample = () => {
   const hello = greet('world');

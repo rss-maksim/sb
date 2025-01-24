@@ -1,5 +1,5 @@
 {
-  "name": "scoreboard",
+  "name": "@lib/scoreboard",
   "version": "0.1.0",
   "main": "dist/scoreboard.umd.js",
   "module": "dist/scoreboard.es.js",

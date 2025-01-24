@@ -16,6 +16,11 @@
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "test": {
+      "dependsOn": ["build"],
+      "inputs": ["src/**/*.{ts,tsx}", "test/**/*.{ts,tsx}", "jest.config.js"],
+      "outputs": ["dist/**", "build/**"]
     }
   }
 }
