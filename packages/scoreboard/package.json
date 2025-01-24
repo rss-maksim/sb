@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "build": "npx vite build",
-    "test": "vitest run"
+    "test": "vitest"
   },
   "keywords": [
     "sport",

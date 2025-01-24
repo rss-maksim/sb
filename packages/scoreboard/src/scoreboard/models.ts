@@ -1,7 +1,10 @@
-export interface IMatchAttributes {
+export interface IBaseMatchAttributes {
   homeTeam: string;
-  homeScore: number;
   awayTeam: string;
+}
+
+export interface IMatchAttributes extends IBaseMatchAttributes {
+  homeScore: number;
   awayScore: number;
   startedAt: number;
 }
@@ -13,9 +16,10 @@ export interface IMatch extends IMatchAttributes {
 }
 
 export interface IScoreboard {
-  startMatch(homeTeam: string, awayTeam: string): IMatchAttributes;
+  startMatch(matchInfo: IBaseMatchAttributes): IMatchAttributes;
   updateScore(matchInfo: Omit<IMatchAttributes, 'startedAt'>): void;
-  finishMatch(homeTeam: string, awayTeam: string): void;
+  finishMatch(matchInfo: IBaseMatchAttributes): boolean;
   getSummary(): IMatchAttributes[];
-  hasMatch(homeTeam: string, awayTeam: string): boolean;
+  getMatch(matchInfo: IBaseMatchAttributes): IMatch;
+  hasMatch(matchInfo: IBaseMatchAttributes): boolean;
 }
