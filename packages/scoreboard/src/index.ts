@@ -1,2 +1,3 @@
-export * from './scoreboard/scoreboard.spec';
-export * from './scoreboard/match.spec';
+export * from './scoreboard/scoreboard';
+export * from './scoreboard/match';
+export * from './scoreboard/models';
