@@ -40,7 +40,6 @@ export const useScoreboard = (): IUseScoreboard => {
 
       setMatches(() => scoreboard.getSummary());
     },
-
     hasMatch: (homeTeam: string, awayTeam: string): boolean => {
       return scoreboard.hasMatch({ homeTeam, awayTeam });
     },
